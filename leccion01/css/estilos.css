@@ -1,0 +1,34 @@
+* {
+	background-color: ghostwhite;
+	color: cornflowerblue;
+}
+h1 {
+	color: aqua;
+}
+h2 {
+	color: darkcyan;
+}
+
+#titulo {
+	color: crimson;
+	text-align: center;
+}
+
+.centrar {
+	text-align: center;
+}
+
+.texto-grande {
+	font-size: 20px;
+}
+
+h4,
+h5,
+h6 {
+	color: crimson;
+	text-align: center;
+}
+
+p.centrar {
+	text-align: center;
+}

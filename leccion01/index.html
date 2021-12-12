@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Introduccion a CSS</title>
+		<!--CSS-->
+		<link rel="stylesheet" href="css/estilos.css" />
+		<!--Estilos-->
+		<style>
+			h1 {
+				color: red;
+				text-align: right;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 style="color: blue; text-align: center; font-size: 100px">
+			Universidad CSS
+		</h1>
+		<h2>Agregar estilos directos a la etiqueta html</h2>
+		<h3>
+			No es una buena practica, tienen prioridad frente a las demas formas de
+			asignar css.
+		</h3>
+
+		<h2>Agregar estilos en etiqueta style dentro del head</h2>
+		<h3>
+			Toma prioridad sobre el archivo externo, si los estilos en la etiqueta
+			style estan definidos despues del link de archivos.
+		</h3>
+		<h1>Universidad CSS</h1>
+
+		<h2>Agregar estilos desde un archivo externo</h2>
+		<h3>
+			Para que los estilos del archivo tengan prioridad se les debe agregar
+			!important.
+		</h3>
+
+		<h2>Jerarquia de propiedad</h2>
+		<ol>
+			<li>!important (toma prioridad si se aplica este atributo)</li>
+			<li>Inline (especificar en la etiqueta el atributo style)</li>
+			<li>Internal (etiqueta style)</li>
+			<li>
+				External (archio.css, puede tomar prioridad sobre la etiqueta style si
+				se declara antes de la etiqueta.)
+			</li>
+			<li>Estilos navegado web</li>
+		</ol>
+
+		<h2>Selector ID</h2>
+		<h3>
+			Sirve para definir elementos unicos de nuestra página html, se lo define
+			con #nombreid en el archivo.css y en html con el atributo id="".
+		</h3>
+		<h1 id="titulo">Ejemplo selector id</h1>
+
+		<h2>Clases</h2>
+		<h3>
+			Sirve para aplicarlos a varios elementos de nuestra página los mismos
+			estilos, por ejemplo los botones de nuestra página, se lo define con
+			.nombreclase en el archivo.css y en html con el atributo class="".
+		</h3>
+		<p class="centrar texto-grande">Iniciando el curso CSS</p>
+		<p class="centrar">www.google.com</p>
+
+		<h2>Selector universal en CSS</h2>
+		<h3>
+			Sirve para aplicar los mismo estilos a todos los elementos de la página,
+			se define con *{}
+		</h3>
+		<h2>Agrupar selectores CSS</h2>
+		<h3>
+			Sirve para poner los mismos estilos a diferentes elementos, se define con
+			elemento,elemento1,elementoN{}
+		</h3>
+
+		<h4>Hola soy h4 y tengo el mismo estilo agrupado</h4>
+		<h5>Hola soy h5 y tengo el mismo estilo agrupado</h5>
+		<h6>Hola soy h6 y tengo el mismo estilo agrupado</h6>
+
+		<h2>Subclases</h2>
+		<h3>
+			Sirve para selecionar un elemeto que tenga una clase especifica para
+			aplicarle estilos, se define con elemento.clase{}
+		</h3>
+		<p class="centrar">soy un parrafo con la clase centrar</p>
+		<p>soy un parrafo sin la clase centrar</p>
+	</body>
+</html>
